@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#464e57</color>
+
+    <color name="app_grey_text">#666666</color>
+    <color name="wbcf_white">#ffffff</color>
+
+    <color name="wbcf_demo_bg">#181a1c</color>
+    <color name="wbcf_demo_version_text">#5c5b5b</color>
+    <color name="wbcf_demo_edit_text_hint">#666666</color>
+    <color name="wbcf_demo_setting_line">#303133</color>
+    <color name="wbcf_demo_setting_area_bg">#1b1d1f</color>
+    <color name="wbcf_demo_setting_text_color">#999999</color>
+
+
+    <!--供客户定制颜色值，可修改仅自己需要修改的颜色，其余复制粘贴demo示例即可-->
+    <!--请注意，客户定制的色值除了需要在用户app的colors里加上以下所有配置之外，还需要同步增加mipmaps里的三张图片和drawble里的5个xml文件-->
+    <!--请注意，客户定制的色值除了需要在用户app的colors里加上以下所有配置之外，还需要同步增加mipmaps里的三张图片和drawble里的5个xml文件-->
+    <!--请注意，客户定制的色值除了需要在用户app的colors里加上以下所有配置之外，还需要同步增加mipmaps里的三张图片和drawble里的5个xml文件-->
+    <!--详情见下面说明，所有的定制res都以wbcf_custom开头，用户可以参考demo使用-->
+
+    <!--授权页面还有一张背景图需要设置,请在mipmap文件夹里替换-->
+    <!--授权页面titlebar背景颜色-->
+    <color name="wbcf_custom_auth_title_bar">#ffffff</color>
+    <!--授权页面titlebar返回键颜色-->
+    <color name="wbcf_custom_auth_back_tint">#ffffff</color>
+    <!--识别页面背景颜色-->
+    <color name="wbcf_custom_auth_bg">#ffffff</color>
+    <!--授权页面标题颜色-->
+    <color name="wbcf_custom_auth_title">#1d2232</color>
+    <!--授权页面文字颜色-->
+    <color name="wbcf_custom_auth_text">#a5a7ad</color>
+    <!--授权页面协议名称颜色-->
+    <color name="wbcf_custom_auth_name_text">#1d2232</color>
+    <!--授权页面按钮文字颜色-->
+    <color name="wbcf_custom_auth_btn_text">#80ffffff</color>
+    <!--授权页面被选中按钮背景色，需要配合drawable/wbcf_custom_auth_btn_checked.xml使用-->
+    <color name="wbcf_custom_auth_btn_checked_bg">#1e2642</color>
+    <!--授权页面未选中按钮背景色，需要配合drawable/wbcf_custom_auth_btn_unchecked.xml使用-->
+    <color name="wbcf_custom_auth_btn_unchecked_bg">#9ca1ae</color>
+
+    <!--识别页面背景色-->
+    <color name="wbcf_custom_verify_bg">#ffffff</color>
+    <!--识别页面初始化圆框-->
+    <color name="wbcf_custom_initial_border">#33ffffff</color>
+    <!--识别页面有脸时圆框颜色-->
+    <color name="wbcf_custom_border">#ffb155</color>
+    <!--识别页面有脸时提示文字颜色-->
+    <color name="wbcf_custom_tips_text">#1d2232</color>
+    <!--识别页面人脸不符合条件时圆框颜色-->
+    <color name="wbcf_custom_border_error">#fa5a5a</color>
+    <!--识别页面人脸不符合条件时提示文字颜色-->
+    <color name="wbcf_custom_tips_text_error">#fa5a5a</color>
+    <!--识别页面用户自定义提示文字颜色-->
+    <color name="wbcf_custom_customer_tip_text">#5d646d</color>
+    <!--识别页面长提示文字颜色-->
+    <color name="wbcf_custom_long_tip_text">#777A84</color>
+    <!--识别页面长提示背景颜色,需要配合drawable/wbcf_custom_long_tip_bg.xml使用-->
+    <color name="wbcf_custom_long_tip_bg">#fafafa</color>
+
+    <!--弹窗背景颜色-->
+    <color name="wbcf_custom_dialog_bg">#ffffff</color>
+    <!--弹窗标题文字颜色-->
+    <color name="wbcf_custom_dialog_title_text">#363C62</color>
+    <!--弹窗内容文字颜色-->
+    <color name="wbcf_custom_dialog_text">#363C62</color>
+    <!--弹窗右边按钮文字颜色-->
+    <color name="wbcf_custom_dialog_right_text">#363C62</color>
+    <!--弹窗左边按钮文字颜色-->
+    <color name="wbcf_custom_dialog_left_text">#363C62</color>
+
+    <!--如果不使用sdk的结果页面，则可以忽略以下配置-->
+    <!--结果页面还有一张成功图和一张失败图需要设置,请在mipmap文件夹里替换-->
+    <!--结果页面背景颜色-->
+    <color name="wbcf_custom_result_bg">#ffffff</color>
+    <!--结果页面标题颜色-->
+    <color name="wbcf_custom_result_title">#1d2232</color>
+    <!--结果页面原因文字颜色-->
+    <color name="wbcf_custom_result_reason_text">#a5a7ad</color>
+    <!--结果页面退出按钮文字颜色-->
+    <color name="wbcf_custom_result_quit_btn_text">#777A84</color>
+    <!--结果页面取消按钮背景颜色,需要配合drawable/wbcf_custom_result_cancel_btn.xml使用-->
+    <color name="wbcf_custom_cancel_btn_bg">#ffffff</color>
+    <!--结果页面完成按钮背景颜色,需要配合drawable/wbcf_custom_result_yes_btn.xml使用-->
+    <color name="wbcf_custom_yes_btn_bg">#1e2642</color>
+
+</resources>

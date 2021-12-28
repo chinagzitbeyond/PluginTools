@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '32.0.0'
+
+    defaultConfig {
+        applicationId "com.tencent.cloud.huiyansdkface.sampledemo"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            // 设置支持的SO库架构 可以按照app需要进行设置
+            // sdk默认有'armeabi', 'armeabi-v7a',  'arm64-v8a'三个平台
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('debug.keystore')
+            storePassword 'android'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'KYC-demo-proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'KYC-demo-proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //0. appcompat-v7
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+    //1. 云刷脸SDK
+    implementation(name: 'WbCloudFaceLiveSdk-v4.4.1.2-1f740b1e', ext: 'aar')
+    //2. 云common SDK
+    implementation(name: 'WbCloudNormal-v5.1.0-f9eb035', ext: 'aar')
+}

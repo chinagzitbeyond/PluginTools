@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wbcf_demo_bg"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/wbcf_demo_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/wbcf_demo_setting" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cloud_face_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/cloud_face_logo" />
+
+    <TextView
+        android:id="@+id/sit_env_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cloud_face_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/wbcf_demo_version_text" />
+
+    <TextView
+        android:id="@+id/attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sit_env_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="供体验使用！"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/sit_env_logo"
+        android:layout_marginTop="60dp"
+        android:hint="请输入姓名"
+        android:singleLine="true"
+        android:textColor="@color/wbcf_white"
+        android:textColorHint="@color/app_grey_text"
+        android:theme="@style/WeEditText" />
+
+    <EditText
+        android:id="@+id/et_idNo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_name"
+        android:hint="请输入身份证号码"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/wbcf_white"
+        android:textColorHint="@color/app_grey_text"
+        android:theme="@style/WeEditText" />
+
+    <LinearLayout
+        android:id="@+id/faceIdModeLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_idNo"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/faceVerifyLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="体验人脸识别" />
+
+    </LinearLayout>
+
+</RelativeLayout>

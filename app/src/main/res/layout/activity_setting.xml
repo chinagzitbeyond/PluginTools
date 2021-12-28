@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wbcf_demo_bg"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tencent.cloud.huiyansdkface.sampledemo.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/wbcf_demo_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/wbcf_demo_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/face_verify_left_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/wbcf_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wbcf_demo_title_bar"
+        android:layout_marginTop="18dp">
+
+        <RelativeLayout
+            android:id="@+id/wbcf_demo_setting_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/wbcf_demo_result_rl"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="验证成功展示结果页"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <com.tencent.cloud.huiyansdkface.sampledemo.SlipButton
+                        android:id="@+id/wbcf_demo_show_success_slip_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="验证失败展示结果页"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <com.tencent.cloud.huiyansdkface.sampledemo.SlipButton
+                        android:id="@+id/wbcf_demo_show_fail_slip_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="是否录制视频"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <com.tencent.cloud.huiyansdkface.sampledemo.SlipButton
+                        android:id="@+id/wbcf_demo_record_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="是否播放提示语"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <com.tencent.cloud.huiyansdkface.sampledemo.SlipButton
+                        android:id="@+id/wbcf_demo_play_voice_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/langguage_choose_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="选择语言"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/langguage_choose_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:dropDownWidth="100dp"
+                        android:popupBackground="@color/wbcf_demo_bg"
+                        android:entries="@array/data"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wbcf_demo_color_ll"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:layout_below="@id/wbcf_demo_result_rl"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/color_choose_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="选择皮肤"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/wbcf_demo_color_choose_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/color_choose_tv"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/wbcf_demo_black_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="黑色"
+                            android:textColor="@color/wbcf_demo_setting_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/wbcf_demo_white_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="白色"
+                            android:textColor="@color/wbcf_demo_setting_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/wbcf_demo_custom_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="客户定制"
+                            android:textColor="@color/wbcf_demo_setting_text_color" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/wbcf_demo_setting_area_bg"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/src_choose_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="选择对比源"
+                        android:textColor="@color/wbcf_demo_setting_text_color"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/wbcf_demo_src_choose_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/src_choose_tv"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/wbcf_demo_id_src_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="身份证对比"
+                            android:textColor="@color/wbcf_demo_setting_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/wbcf_demo_none_src_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="仅活体检测"
+                            android:textColor="@color/wbcf_demo_setting_text_color" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/wbcf_demo_setting_line" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
